@@ -1,0 +1,88 @@
+:root {
+  --primary: #222;
+  --accent: #0077ff;
+  --bg: #f9f9f9;
+  --white: #fff;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: var(--primary);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--white);
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+  letter-spacing: 0.02em;
+}
+header p {
+  margin: 0 0 1rem 0;
+  color: var(--accent);
+  font-weight: bold;
+}
+nav a {
+  display: inline-block;
+  margin: 0 1rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: var(--accent);
+}
+
+main {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+section {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+section h2 {
+  margin-top: 0;
+  color: var(--accent);
+}
+ul {
+  padding-left: 1rem;
+}
+li {
+  margin-bottom: 1.2rem;
+}
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 1rem;
+  color: #888;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  main {
+    padding: 0 0.5rem;
+  }
+  section {
+    padding: 1rem;
+  }
+}
